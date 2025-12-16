@@ -1,25 +1,19 @@
 // 
-// Main website styles
+// Bootstrap 3 Customizations
 //
 // This file contains all the elements needed to change the 
 // appearance of the default bootstrap theme.
 //
-// @project   <http://pagestudiocms.com> 
-// @version   0.1.1
-// @package   xhtml-css
-// @author    Cosmo Mathieu <http://cosmointeractive.co> 
-// @copyright 2022 <http://cosmointeractive.co>
-// @file      style.css
-// @css-for   IE 9+, Safari 4+, Firefox 3+
 
 // --------------------------------------------------------------
 // Sass file Imports
 // --------------------------------------------------------------
 
-@import "helpers/variables";   // Theme specific variables 
-@import "helpers/bootstrap";   // Bootstrap variable overrides
-@import "helpers/helpers";     // Keyframes etc.
-@import "helpers/mixins";      // Theme specific mixins
+// Import default variables first (can be overridden)
+@import "helpers/variables";     // Theme specific variables 
+@import "helpers/bootstrap";     // Bootstrap variable overrides
+@import "helpers/helpers";       // Keyframes etc.
+@import "helpers/mixins";                 // Theme specific mixins
 @import "vendors/rfs";
 @import "vendors/bootstrap/_bootstrap";   // Bootstrap variables
 @import "vendors/my-sass-mixins/mixins";  // Framework specific mixins 
@@ -33,8 +27,6 @@
 
 // Page sections - header, sidebar, footer. May use components defined under components
 @import "layout/base"; 
-
-// @import "pages/base";
 
 // ---------------------------------------------------------------
 // Utility classes
@@ -51,22 +43,22 @@
 // Visibility 
 
 .hidden-xs {
-  @media only screen and (max-width: $screen-xs - 1px) {
+  @media only screen and (max-width: ($screen-xs - 1px)) {
     display: none !important;
   }
 }
 .hidden-sm {
-  @media only screen and (max-width: $screen-sm - 1px) {
+  @media only screen and (max-width: ($screen-sm - 1px)) {
     display: none !important;
   }
 }
 .hidden-md {
-  @media only screen and (max-width: $screen-md - 1px) {
+  @media only screen and (max-width: ($screen-md - 1px)) {
     display: none !important;
   }
 }
 .hidden-lg {
-  @media only screen and (max-width: $screen-lg - 1px) {
+  @media only screen and (max-width: ($screen-lg - 1px)) {
     display: none !important;
   }
 }
