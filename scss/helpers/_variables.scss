@@ -26,15 +26,15 @@ $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
 $gray-base:              $black !default;
-$gray-darker:            $gray-900; // lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              $gray-700; // lighten($gray-base, 20%) !default;   // #333
-$gray:                   $gray-500; // lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             $gray-500; // lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           $gray-200; // lighten($gray-base, 93.5%) !default; // #eee
+$gray-darker:            $gray-900 !default; // lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              $gray-700 !default; // lighten($gray-base, 20%) !default;   // #333
+$gray:                   $gray-500 !default; // lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             $gray-500 !default; // lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           $gray-200 !default; // lighten($gray-base, 93.5%) !default; // #eee
 
 // Global 
 
-$brand-primary:         #267df4;
+$brand-primary:         #267df4 !default;
 $brand-primary-dark:    darken($brand-primary, 6%) !default;
 $brand-secondary:       $gray-600 !default;
 $brand-secondary-dark:    darken($brand-secondary, 6%) !default;
@@ -49,8 +49,8 @@ $brand-danger-dark:     darken($brand-danger, 4%) !default;
 
 $brand-link-color: $brand-primary !default; 
 
-// $border-radius-base: 3px;
-// $border-color-light: #DCDCDC;
+// $border-radius-base: 3px !default;
+// $border-color-light: #DCDCDC !default;
 
 $inverse-base-color:  #222 !default;
 
@@ -62,7 +62,7 @@ $breakpoints: (
   medium:   '(max-width: 992px)',
   small:    '(max-width: 768px)',
   xsmall:   '(max-width: 480px)'
-);
+) !default;
 
 // --------------------------------------------------------------
 // Bootstrap variables are found in bootstrap/_variables.scss
@@ -72,8 +72,8 @@ $breakpoints: (
 //
 //##
 
-$font-family-sans-serif:   system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-// $font-family-sans-serif: 'Poppins', sans-serif;
+$font-family-sans-serif:   system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $font-family-sans-serif: 'Poppins', sans-serif !default;
 // Bootstrap 4 vars 
 
 $font-weight-light:         200 !default;
@@ -97,8 +97,8 @@ $display-line-height:         $headings-line-height !default;
 //
 //##
 
-$component-active-bg:         $brand-primary;
-$input-btn-focus-width:       3px;
+$component-active-bg:         $brand-primary !default;
+$input-btn-focus-width:       3px !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
@@ -106,9 +106,9 @@ $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-colo
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-default-color:              #555;
-$btn-default-bg:                 #FFF;
-$btn-default-border:             darken($btn-default-bg, 6%);
+$btn-default-color:              #555 !default;
+$btn-default-bg:                 #FFF !default;
+$btn-default-border:             darken($btn-default-bg, 6%) !default;
 
 $btn-secondary-color:              #fff !default;
 $btn-secondary-bg:                 $brand-secondary !default;
@@ -120,7 +120,7 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 //
 //##
 
-$input-border-focus:              $input-btn-focus-color; // #80bdff;
+$input-border-focus:              $input-btn-focus-color !default; // #80bdff;
 
 //== Navbar
 //
@@ -155,10 +155,10 @@ $navbar-clear-toggle-border-color:        #333 !default;
 // Non Bootstrap variables  
 // --------------------------------------------------------------
 
-$mobile-overlay-close-btn: rgba(255, 255, 255, 0.97);
-$mobile-overlay-close-btn-size: 25px;
+$mobile-overlay-close-btn: rgba(255, 255, 255, 0.97) !default;
+$mobile-overlay-close-btn-size: 25px !default;
 
-$table-hover-bg-color: #F2F7FA;
+$table-hover-bg-color: #F2F7FA !default;
 
 // --------------------------------------------------------------
 // Bootstrap 4 variables 
